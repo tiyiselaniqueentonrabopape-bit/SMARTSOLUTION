@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Solution - Electrical Trading & Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-brand">
+            <div class="logo">
+                <div class="logo-icon">S</div>
+                <div class="logo-text">
+                    <h1>SMART <span>SOLUTION</span></h1>
+                    <p>ELECTRICAL TRADING & PROJECTS (PTY LTD)</p>
+                </div>
+            </div>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#" data-page="home" class="active">Home</a></li>
+            <li><a href="#" data-page="about">About Us</a></li>
+            <li><a href="#" data-page="services">Services</a></li>
+            <li><a href="#" data-page="rating">Ratings</a></li>
+            <li><a href="#" data-page="contact">Contact</a></li>
+            <li id="dashboardNav" style="display:none"><a href="#" data-page="dashboard">Dashboard</a></li>
+            <li id="adminNav" style="display:none"><a href="#" data-page="admin">Admin Panel</a></li>
+            <li id="loginNav"><a href="#" data-page="login" class="btn-login">Login</a></li>
+            <li id="logoutNav" style="display:none"><a href="#" id="logoutBtn" class="btn-logout">Logout</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer"></div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay" style="display:none">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <!-- HOME PAGE -->
+    <section id="home" class="page active">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>YOUR VISION, <span>OUR ELECTRICAL EXPERTISE</span></h1>
+                <p>Professional electrical solutions for residential, commercial, and industrial needs across South Africa.</p>
+                <div class="hero-buttons">
+                    <a href="#" data-page="services" class="btn-primary">Our Services</a>
+                    <a href="#" data-page="contact" class="btn-secondary">Get Quote</a>
+                </div>
+            </div>
+        
+                <div class="stat">
+                    <i class="fas fa-clock"></i>
+                    <h3>24/7</h3>
+                    <p>Emergency Service</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-section">
+            <h2 class="section-title">Why Choose <span>Smart Solution?</span></h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Safety First</h3>
+                    <p>Strict adherence to SANS 10142-1 standards and safety regulations.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Quality Materials</h3>
+                    <p>Only SABS-approved materials and components used in all installations.</p>
+                </div>
+            
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <div class="cta-content">
+                <h2>Need Electrical Services?</h2>
+                <p>Contact us today for a free consultation and quote. No job too big or small!</p>
+                <a href="#" data-page="contact" class="btn-primary">Contact Us Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US PAGE -->
+    <section id="about" class="page">
+        <div class="page-header">
+            <h1>About <span>Us</span></h1>
+            <p>Your trusted partner in electrical excellence</p>
+        </div>
+        
+        <div class="about-container">
+            <div class="about-image">
+                <div class="about-img-placeholder">
+                    <i class="fas fa-hard-hat"></i>
+                    <p>Smart Solution Team</p>
+                </div>
+            </div>
+            <div class="about-content">
+                <h2>Smart Solution Electrical Trading & Projects (Pty) Ltd</h2>
+                <p>Founded by <strong>Tumelo Penny Rabopape</strong>, Smart Solution has grown to become one of South Africa's most reliable electrical service providers. We specialize in delivering top-tier electrical solutions for residential, commercial, and industrial clients.</p>
+                <p>Our mission is to provide safe, efficient, and innovative electrical services that power progress while maintaining the highest standards of professionalism and customer satisfaction.</p>
+                
+                <div class="about-values">
+                    <div class="value">
+                        <i class="fas fa-bullseye"></i>
+                        <h4>Our Mission</h4>
+                        <p>To deliver exceptional electrical services that exceed client expectations through innovation, safety, and reliability.</p>
+                    </div>
+                    <div class="value">
+                        <i class="fas fa-eye"></i>
+                        <h4>Our Vision</h4>
+                        <p>To be the leading electrical solutions provider in South Africa, known for quality, integrity, and excellence.</p>
+                    </div>
+                    <div class="value">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Our Values</h4>
+                        <p>Safety, Integrity, Excellence, Innovation, and Customer-Centric approach in everything we do.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <h2 class="section-title">Meet Our <span>Founder</span></h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-img">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>TUMELO PENNY RABOPAPE</h3>
+                    <p class="role">Founder & CEO</p>
+                    <p>With experience in electrical engineering and project management, Tumelo leads our team with passion and expertise.</p>
+                    <div class="team-contact">
+                        <a href="tel:+27793334957"><i class="fas fa-phone"></i></a>
+                        <a href="mailto:pennytumelo@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES PAGE -->
+    <section id="services" class="page">
+        <div class="page-header">
+            <h1>Our <span>Services</span></h1>
+            <p>Comprehensive electrical solutions for every need</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-home"></i></div>
+                <h3>House Wiring</h3>
+                <p>Residential electrical installations, rewiring, and upgrades. Complete home electrical solutions from new builds to renovations.</p>
+                <ul>
+                    <li>New installation wiring</li>
+                    <li>Rewiring old houses</li>
+                    <li>Distribution board upgrades</li>
+                    <li>Lighting installations</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-search"></i></div>
+                <h3>Fault Finding</h3>
+                <p>Expert diagnosis and troubleshooting of electrical issues. We identify and fix problems quickly and safely.</p>
+                <ul>
+                    <li>Circuit breaker tripping</li>
+                    <li>Power outages diagnosis</li>
+                    <li>Short circuit detection</li>
+                    <li>Earth leakage problems</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-cog"></i></div>
+                <h3>Motor Connections</h3>
+                <p>Single and three-phase motor wiring, installation, and maintenance for industrial and commercial applications.</p>
+                <ul>
+                    <li>Single-phase motor wiring</li>
+                    <li>Three-phase motor installation</li>
+                    <li>Star-delta starters</li>
+                    <li>Motor control panels</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-th-large"></i></div>
+                <h3>Panel Design & Wiring</h3>
+                <p>Custom electrical panel engineering, design, and installation for various applications.</p>
+                <ul>
+                    <li>Distribution panels</li>
+                    <li>Control panels</li>
+                    <li>MCC panels</li>
+                    <li>Custom panel builds</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-microchip"></i></div>
+                <h3>PLC Wiring</h3>
+                <p>Programmable Logic Controller installations, programming, and integration for automation systems.</p>
+                <ul>
+                    <li>PLC panel wiring</li>
+                    <li>Automation systems</li>
+                    <li>Sensor integration</li>
+                    <li>Industrial controls</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-wrench"></i></div>
+                <h3>Maintenance</h3>
+                <p>Routine service and repairs for all electrical systems to ensure optimal performance and safety.</p>
+                <ul>
+                    <li>Preventive maintenance</li>
+                    <li>System inspections</li>
+                    <li>Emergency repairs</li>
+                    <li>Compliance certificates</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-plug"></i></div>
+                <h3>Electronics</h3>
+                <p>Installation and service of geysers, stoves, and other household electrical appliances.</p>
+                <ul>
+                    <li>Geyser installation & repair</li>
+                    <li>Stove & oven connections</li>
+                    <li>Appliance wiring</li>
+                    <li>Air conditioning circuits</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-solar-panel"></i></div>
+                <h3>Solar & Inverter Systems</h3>
+                <p>Solar power and battery inverter installations for energy independence and cost savings.</p>
+                <ul>
+                    <li>Solar panel installation</li>
+                    <li>Inverter systems</li>
+                    <li>Battery backup systems</li>
+                    <li>Grid-tied solutions</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- RATING PAGE -->
+    <section id="rating" class="page">
+        <div class="page-header">
+            <h1>Customer <span>Ratings</span></h1>
+            <p>See what our clients say about us</p>
+        </div>
+
+        <div class="rating-summary">
+            <div class="rating-big">
+                <h2 id="averageRating">0.0</h2>
+                <div class="stars" id="averageStars">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p id="totalReviews">Based on 0 reviews</p>
+            </div>
+            <div class="rating-bars">
+                <div class="rating-bar">
+                    <span>5 Star</span>
+                    <div class="bar"><div class="fill" id="bar5" style="width: 0%"></div></div>
+                    <span id="count5">0</span>
+                </div>
+                <div class="rating-bar">
+                    <span>4 Star</span>
+                    <div class="bar"><div class="fill" id="bar4" style="width: 0%"></div></div>
+                    <span id="count4">0</span>
+                </div>
+                <div class="rating-bar">
+                    <span>3 Star</span>
+                    <div class="bar"><div class="fill" id="bar3" style="width: 0%"></div></div>
+                    <span id="count3">0</span>
+                </div>
+                <div class="rating-bar">
+                    <span>2 Star</span>
+                    <div class="bar"><div class="fill" id="bar2" style="width: 0%"></div></div>
+                    <span id="count2">0</span>
+                </div>
+                <div class="rating-bar">
+                    <span>1 Star</span>
+                    <div class="bar"><div class="fill" id="bar1" style="width: 0%"></div></div>
+                    <span id="count1">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews-container" id="reviewsContainer">
+            <p class="empty">Loading reviews...</p>
+        </div>
+
+        <div class="add-review" id="addReviewSection">
+            <h3>Write a Review</h3>
+            <p id="reviewLoginPrompt">Please <a href="#" data-page="login">login</a> to leave a review.</p>
+            <form id="reviewForm" style="display:none">
+                <div class="star-input">
+                    <p>Your Rating:</p>
+                    <div class="star-rating-input">
+                        <i class="far fa-star" data-rating="1"></i>
+                        <i class="far fa-star" data-rating="2"></i>
+                        <i class="far fa-star" data-rating="3"></i>
+                        <i class="far fa-star" data-rating="4"></i>
+                        <i class="far fa-star" data-rating="5"></i>
+                    </div>
+                    <input type="hidden" id="reviewRating" value="0">
+                </div>
+                <div class="form-group">
+                    <textarea id="reviewText" placeholder="Share your experience with Smart Solution..." rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Submit Review</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- CONTACT PAGE -->
+    <section id="contact" class="page">
+        <div class="page-header">
+            <h1>Contact <span>Us</span></h1>
+            <p>Get in touch for your electrical needs</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone Numbers</h4>
+                        <p><a href="tel:+27793334957">+27 79 333 4957</a></p>
+                        <p><a href="tel:+27781001947">+27 78 100 1947</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:pennytumelo@gmail.com">pennytumelo@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-user"></i>
+                    <div>
+                        <h4>Founder</h4>
+                        <p>TUMELO PENNY RABOPAPE</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Working Hours</h4>
+                        <p>Monday - Friday: 08:00 - 17:00</p>
+                        <p>Saturday: 08:00 - 13:00</p>
+                        <p>Emergency: 24/7</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h2>Send us a Message</h2>
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="contactName" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contactEmail" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" id="contactPhone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <select id="contactService">
+                                <option value="">Select Service</option>
+                                <option value="House Wiring">House Wiring</option>
+                                <option value="Fault Finding">Fault Finding</option>
+                                <option value="Motor Connections">Motor Connections</option>
+                                <option value="Panel Design & Wiring">Panel Design & Wiring</option>
+                                <option value="PLC Wiring">PLC Wiring</option>
+                                <option value="Maintenance">Maintenance</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Solar & Inverter Systems">Solar & Inverter Systems</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contactMessage" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOGIN PAGE -->
+    <section id="login" class="page">
+        <div class="auth-container">
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="user-login">User Login</button>
+                <button class="auth-tab" data-tab="admin-login">Admin Login</button>
+                <button class="auth-tab" data-tab="register">Register</button>
+            </div>
+
+            <!-- User Login -->
+            <div id="user-login" class="auth-panel active">
+                <h2>User Login</h2>
+                <p>Access your dashboard and manage your services</p>
+                <form id="userLoginForm">
+                    <div class="form-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="userLoginUsername" placeholder="Username or Email" required>
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="userLoginPassword" placeholder="Password" required>
+                        <i class="fas fa-eye toggle-password" data-target="userLoginPassword"></i>
+                    </div>
+                    <div class="form-options">
+                        <label><input type="checkbox" id="rememberMe"> Remember me</label>
+                        <a href="#" id="forgotPassword">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Login</button>
+                </form>
+            </div>
+
+            <!-- Admin Login -->
+            <div id="admin-login" class="auth-panel">
+                <h2>Admin Login</h2>
+                <p>Administrative access only</p>
+                <form id="adminLoginForm">
+                    <div class="form-group">
+                        <i class="fas fa-user-shield"></i>
+                        <input type="text" id="adminLoginUsername" placeholder="Admin Username" required>
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="adminLoginPassword" placeholder="Admin Password" required>
+                        <i class="fas fa-eye toggle-password" data-target="adminLoginPassword"></i>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Admin Login</button>
+                </form>
+            </div>
+
+            <!-- Registration -->
+            <div id="register" class="auth-panel">
+                <h2>Create Account</h2>
+                <p>Join Smart Solution today</p>
+                <form id="registerForm">
+                    <div class="form-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="regUsername" placeholder="Username" required>
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="regEmail" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="regPhone" placeholder="Phone Number (+27...)" required>
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="regPassword" placeholder="Password (min 6 chars)" required>
+                        <i class="fas fa-eye toggle-password" data-target="regPassword"></i>
+                    </div>
+                    <div class="password-strength" id="passwordStrength"></div>
+                    <div class="form-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="regConfirmPassword" placeholder="Confirm Password" required>
+                    </div>
+                    <div class="form-group terms">
+                        <label><input type="checkbox" id="agreeTerms" required> I agree to the <a href="#">Terms & Conditions</a></label>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Register</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- USER DASHBOARD -->
+    <section id="dashboard" class="page">
+        <div class="dashboard-header">
+            <h1>Welcome, <span id="dashboardUsername">User</span>!</h1>
+            <p>Your personal dashboard</p>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="dashboard-card">
+                <div class="card-icon"><i class="fas fa-clipboard-list"></i></div>
+                <h3>My Requests</h3>
+                <p class="card-number" id="myRequestsCount">0</p>
+                <p>Active service requests</p>
+            </div>
+            <div class="dashboard-card">
+                <div class="card-icon"><i class="fas fa-star"></i></div>
+                <h3>My Reviews</h3>
+                <p class="card-number" id="myReviewsCount">0</p>
+                <p>Reviews you've written</p>
+            </div>
+            <div class="dashboard-card">
+                <div class="card-icon"><i class="fas fa-calendar"></i></div>
+                <h3>Member Since</h3>
+                <p class="card-number" id="memberSince">-</p>
+                <p>Account created</p>
+            </div>
+            <div class="dashboard-card">
+                <div class="card-icon"><i class="fas fa-bell"></i></div>
+                <h3>Notifications</h3>
+                <p class="card-number" id="notificationsCount">0</p>
+                <p>New notifications</p>
+            </div>
+        </div>
+
+        <div class="dashboard-sections">
+            <div class="dashboard-section">
+                <h3><i class="fas fa-user-circle"></i> Profile Information</h3>
+                <div class="profile-info">
+                    <div class="profile-field">
+                        <label>Username:</label>
+                        <span id="dashUsername">-</span>
+                    </div>
+                    <div class="profile-field">
+                        <label>Email:</label>
+                        <span id="dashEmail">-</span>
+                    </div>
+                    <div class="profile-field">
+                        <label>Phone:</label>
+                        <span id="dashPhone">-</span>
+                    </div>
+                    <div class="profile-field">
+                        <label>Account Type:</label>
+                        <span class="badge-user">User</span>
+                    </div>
+                </div>
+                <button class="btn-secondary" id="editProfileBtn">Edit Profile</button>
+            </div>
+
+            <div class="dashboard-section">
+                <h3><i class="fas fa-tools"></i> Quick Actions</h3>
+                <div class="quick-actions">
+                    <a href="#" data-page="services" class="action-btn">
+                        <i class="fas fa-plus"></i>
+                        <span>Book Service</span>
+                    </a>
+                    <a href="#" data-page="rating" class="action-btn">
+                        <i class="fas fa-star"></i>
+                        <span>Write Review</span>
+                    </a>
+                    <a href="#" data-page="contact" class="action-btn">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact Us</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="dashboard-section full-width">
+                <h3><i class="fas fa-history"></i> My Service Requests</h3>
+                <div class="table-container">
+                    <table id="userRequestsTable">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Service</th>
+                                <th>Status</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="userRequestsBody">
+                            <tr><td colspan="4" class="empty">Loading...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADMIN PANEL -->
+    <section id="admin" class="page">
+        <div class="dashboard-header">
+            <h1><i class="fas fa-shield-alt"></i> Admin Panel</h1>
+            <p>Manage your business operations</p>
+        </div>
+
+        <div class="admin-stats">
+            <div class="stat-card">
+                <i class="fas fa-users"></i>
+                <div>
+                    <h3 id="adminTotalUsers">0</h3>
+                    <p>Total Users</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-clipboard-list"></i>
+                <div>
+                    <h3 id="adminTotalRequests">0</h3>
+                    <p>Service Requests</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-star"></i>
+                <div>
+                    <h3 id="adminTotalReviews">0</h3>
+                    <p>Reviews</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h3 id="adminTotalMessages">0</h3>
+                    <p>Messages</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="admin-tabs">
+            <button class="admin-tab active" data-admin-tab="users">Users</button>
+            <button class="admin-tab" data-admin-tab="requests">Service Requests</button>
+            <button class="admin-tab" data-admin-tab="reviews">Reviews</button>
+            <button class="admin-tab" data-admin-tab="messages">Messages</button>
+            <button class="admin-tab" data-admin-tab="settings">Settings</button>
+        </div>
+
+        <div id="admin-users" class="admin-panel active">
+            <h3>Registered Users</h3>
+            <div class="table-container">
+                <table id="adminUsersTable">
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Registered</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="adminUsersBody"><tr><td colspan="5" class="empty">Loading...</td></tr></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="admin-requests" class="admin-panel">
+            <h3>Service Requests</h3>
+            <div class="table-container">
+                <table id="adminRequestsTable">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>Service</th>
+                            <th>Contact</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="adminRequestsBody"><tr><td colspan="6" class="empty">Loading...</td></tr></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="admin-reviews" class="admin-panel">
+            <h3>Customer Reviews</h3>
+            <div class="table-container">
+                <table id="adminReviewsTable">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>User</th>
+                            <th>Rating</th>
+                            <th>Review</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="adminReviewsBody"><tr><td colspan="5" class="empty">Loading...</td></tr></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="admin-messages" class="admin-panel">
+            <h3>Contact Messages</h3>
+            <div class="table-container">
+                <table id="adminMessagesTable">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Service</th>
+                            <th>Message</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="adminMessagesBody"><tr><td colspan="6" class="empty">Loading...</td></tr></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="admin-settings" class="admin-panel">
+            <h3>Site Settings</h3>
+            <div class="settings-form">
+                <div class="form-group">
+                    <label>Company Name</label>
+                    <input type="text" id="settingCompanyName" value="Smart Solution">
+                </div>
+                <div class="form-group">
+                    <label>Contact Email</label>
+                    <input type="email" id="settingEmail" value="pennytumelo@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label>Phone 1</label>
+                    <input type="text" id="settingPhone1" value="+27 79 333 4957">
+                </div>
+                <div class="form-group">
+                    <label>Phone 2</label>
+                    <input type="text" id="settingPhone2" value="+27 78 100 1947">
+                </div>
+                <div class="form-group">
+                    <label>Working Hours</label>
+                    <input type="text" id="settingHours" value="Mon-Fri: 08:00-17:00 | Sat: 08:00-13:00">
+                </div>
+                <button class="btn-primary" id="saveSettingsBtn">Save Settings</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <div class="logo-icon">S</div>
+                    <h3>SMART SOLUTION</h3>
+                </div>
+                <p>Your trusted partner for all electrical trading and projects. Quality service, guaranteed safety.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#" data-page="home">Home</a></li>
+                    <li><a href="#" data-page="about">About Us</a></li>
+                    <li><a href="#" data-page="services">Services</a></li>
+                    <li><a href="#" data-page="rating">Ratings</a></li>
+                    <li><a href="#" data-page="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#" data-page="services">House Wiring</a></li>
+                    <li><a href="#" data-page="services">Fault Finding</a></li>
+                    <li><a href="#" data-page="services">Solar Systems</a></li>
+                    <li><a href="#" data-page="services">PLC Wiring</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fas fa-phone"></i> +27 79 333 4957</p>
+                <p><i class="fas fa-phone"></i> +27 78 100 1947</p>
+                <p><i class="fas fa-envelope"></i> pennytumelo@gmail.com</p>
+                <p><i class="fas fa-user"></i> Tumelo Penny Rabopape</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Smart Solution Electrical Trading & Projects (Pty) Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>'''
