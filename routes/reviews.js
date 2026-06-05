@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { protect, adminOnly } = require('../middleware/auth');
-const Review = require('../models/Review');
+const Review = require('../models/review');
 
 // @route   GET /api/reviews
 // @desc    Get all reviews
