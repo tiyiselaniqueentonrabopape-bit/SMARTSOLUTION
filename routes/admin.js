@@ -3,10 +3,10 @@ const router = express.Router();
 
 const { protect, adminOnly } = require('../middleware/auth');
 
-const User = require('../models/User');
-const Review = require('../models/Review');
-const Message = require('../models/Message');
-const Request = require('../models/Request');
+const User = require('../models/user');
+const Review = require('../models/review');
+const Message = require('../models/message');
+const Request = require('../models/request');
 
 
 // ======================================================
